@@ -39,7 +39,7 @@ module.exports = function validateRegisterInput(data){
     errors.password2 = 'Password needs to be confirmed';
   }
 
-  if!Validator.equals(data.password, data.password2)){
+  if(!Validator.equals(data.password, data.password2)){
     errors.password2 = 'Password should match'
   }
 
