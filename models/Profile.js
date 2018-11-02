@@ -35,8 +35,7 @@ const ProfileSchema = new Schema({
   githubusername: {
     type: String
   },
-  experience: [
-    {
+  experience: [{
       title: {
         type:  String,
         required: true
@@ -56,13 +55,13 @@ const ProfileSchema = new Schema({
       type: Date,
     },
     current: {
-      type: boolean,
+      type: Boolean,
       default: false
     },
     description: {
       type: String
     }
-  ],
+  }],
   education: [
     {
       school: {
@@ -84,13 +83,13 @@ const ProfileSchema = new Schema({
       type: Date,
     },
     current: {
-      type: boolean,
+      type: Boolean,
       default: false
     },
     description: {
       type: String
     }
-  ],
+  }],
   social: {
     youtube: {
       type: String
